@@ -16,8 +16,7 @@ export default async function WebSearchPage({ searchParams }) {
   }
 
   const data = await response.json();
-
-  // console.log(data);
+  console.log(data);
 
   const results = data.items;
 
@@ -35,5 +34,5 @@ export default async function WebSearchPage({ searchParams }) {
     );
   }
   // return <>{results && <WebSearchResults results={data} />}</>;
-  return <>WebSearchResults</>;
+  return <>{results && results.map(result => <h1 key={result.title}>{result.title}</h1>)}</>
 }
