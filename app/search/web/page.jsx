@@ -16,7 +16,7 @@ export default async function WebSearchPage({ searchParams }) {
   }
 
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
 
   const results = data.items;
 
