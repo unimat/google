@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import PaginationButtons from "./PaginationButtons";
+import PaginationButtons from "./PaginationButtons";
 
 export default function ImageSearchResults({ results }) {
   return (
@@ -30,8 +30,7 @@ export default function ImageSearchResults({ results }) {
         ))}
       </div>
       <div className="ml-16">
-        {/* <PaginationButtons /> */}
-        PaginationButtons
+        <PaginationButtons />
       </div>
     </div>
   );
