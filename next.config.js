@@ -4,9 +4,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'upload.wikimedia.org',
+        // hostname: 'upload.wikimedia.org',
+        // port: '',
+        // pathname: '**/640px-Google_2015_logo.svg.png'
+        hostname: '**',
         port: '',
-        pathname: '**/640px-Google_2015_logo.svg.png'
+        pathname: '**'
       }
     ]
   },
